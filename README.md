@@ -29,9 +29,9 @@ tallerPaquetes/
     └── funciones.go  # Contiene el paquete con imports ("fmt", "strings") y funciones exportadas
 
 ## Comandos 
-go mod tidy  # Actualiza dependencias
-go run main.go  # Corre y prueba (interactivo para conversor)
-git add .  # Agrega README.md, main.go, funciones/funciones.go y todo lo nuevo/modificado
-git status  # Verifica: ahora todo estará en verde (staged)
-git commit -m "Agrego README.md completo con documentación y comandos Git. Actualizo main.go con menú switch."
-git push origin main  # Sube a la rama 'main' en GitHub
+- `go mod tidy  # Actualiza dependencias
+- `go run main.go  # Corre y prueba (interactivo para conversor)
+- `git add .  # Agrega README.md, main.go, funciones/funciones.go y todo lo nuevo/modificado
+- `git status  # Verifica: ahora todo estará en verde (staged)
+- `git commit -m "Agrego README.md completo con documentación y comandos Git. Actualizo main.go con menú switch."
+- `git push origin main  # Sube a la rama 'main' en GitHub
