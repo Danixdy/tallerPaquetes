@@ -1,4 +1,4 @@
-package resolucion
+package funciones
 
 import (
 	"fmt"
@@ -40,7 +40,7 @@ func ConversorMonedas() {
 }
 
 // contarCadaVocal counts vowels in text (case-insensitive).
-func contarCadaVocal(texto string) map[rune]int {
+func ContarCadaVocal(texto string) map[rune]int {
 	resultado := map[rune]int{'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
 	textoLower := strings.ToLower(texto)
 	for _, c := range textoLower {
@@ -49,4 +49,14 @@ func contarCadaVocal(texto string) map[rune]int {
 		}
 	}
 	return resultado
+}
+func ImprimirConteoVocales(texto string) {
+	conteo := ContarCadaVocal(texto)
+	fmt.Printf("Conteo de vocales en '%s':\n", texto)
+	for vocal, cantidad := range conteo {
+		if cantidad > 0 {
+			fmt.Printf("  %c: %d\n", vocal, cantidad)
+		}
+	}
+
 }
